@@ -1,0 +1,26 @@
+using System;
+
+namespace Number3
+{
+        internal class Program
+        {
+            public static void CheckFermat(int a, int b, int c, int n)
+            {
+                if (n > 2 && Math.Pow(a, n) + Math.Pow(b, n) == Math.Pow(c, n))
+                {
+                    Console.WriteLine("Holy smokes, Fermat was wrong!");
+                }
+                else
+                {
+                    Console.WriteLine("No, that doesn’t work.");
+                }
+            }
+        public static void Main(string[] args)
+        {
+            // Test cases for CheckFermat method
+            CheckFermat(1, 2, 3, 4);
+            CheckFermat(0, 0, 0, 5);
+        }
+
+    }
+}
