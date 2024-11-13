@@ -1,0 +1,31 @@
+using System;
+
+namespace Number1
+{
+    class Program
+    {
+        static void Main()
+        {
+            double x1, volume, f;
+            double a = 1.0, b = 2.83, c = 1.2;
+            double r = 1.0;
+            double theta = 0.523599;
+
+            // 1) x1 = (−b + √b2 − 4ac) / 2a
+
+            x1 = (-b + Math.Sqrt(Math.Pow(b, 2) - 4 * a * c)) / (2 * a);
+
+            // 2) volume =(4/3) πr3
+
+            volume = (4.0 / 3.0) * Math.PI * Math.Pow(r, 3);
+
+            // f = sin2(theta) + cos2(theta)
+
+            f = Math.Pow(Math.Sin(theta), 2) + Math.Pow(Math.Cos(theta), 2);
+
+            Console.WriteLine($"x1 = {x1}");
+            Console.WriteLine($"volume = {volume}");
+            Console.WriteLine($"f = {f}");
+        }
+    }
+}
